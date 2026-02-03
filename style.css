@@ -1,0 +1,60 @@
+.passar-o-mouse{
+    background: blue;
+    color: white;
+    padding: 10px 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.passar-o-mouse:hover{
+    background: red;
+}
+
+.card{
+    width: 200px;
+    height: 100px;
+    background: lightgray;
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover{
+    width: 300px;
+}
+
+@keyframes piscar {
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.botao-animado{
+    animation: piscar 0.5s infinite;
+}
+
+@keyframes colorido {
+    0% {background-color: red;}
+    50% {background-color: aqua;}
+    100% {background-color: brown;}
+}
+
+.botao-colorido{ 
+    padding: 15px 30px;
+    border: none;
+    color: white;
+    animation: colorido 1s infinite;
+}
+
+@keyframes girar {
+    from{transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+.botao-girar{
+    padding: 15px 30px;
+    border: none;
+    color: black;
+    animation: girar 1ms infinite linear;
+}
+
+.botao-girar:hover{
+    animation-play-state: paused;
+}
